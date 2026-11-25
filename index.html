@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revisor de planificaciones</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<div class="w">
+<header><h1>Revisor de planificaciones</h1><p>Compara los OA de tu planificación con las bases curriculares vigentes y entrega observaciones concretas. Las planificaciones no deben incluir nombres de estudiantes: usa códigos.</p></header>
+<section class="c" aria-label="Datos de la planificación">
+<label for="tp">Tipo de documento</label><select id="tp"><option value="unidad">Planificación de unidad</option><option value="anual">Planificación anual</option><option value="taller">Taller de reforzamiento</option></select>
+<label for="as">Asignatura</label><select id="as"></select>
+<label for="cu">Curso o nivel</label><select id="cu"></select>
+<label for="fi">Archivo Word (.docx)</label><input id="fi" type="file" accept=".docx,.txt">
+<label for="tx">O pega el texto</label><textarea id="tx" placeholder="Pega aquí la planificación completa."></textarea>
+<div class="row"><button id="go">Revisar</button><button id="st" class="s" hidden>Detener</button><button id="rs" class="s">Resumen UTP</button></div>
+<p class="n">Los decretos 83 y 67 se aplican según su texto oficial. La Ley 20.845 se considera solo como marco de inclusión.</p>
+</section>
+<section class="c" id="out" aria-live="polite"><p class="e">El resultado aparecerá aquí.</p></section>
+<footer>Las revisiones se guardan solo en este navegador. No escribas nombres de estudiantes en las planificaciones: usa códigos.</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
