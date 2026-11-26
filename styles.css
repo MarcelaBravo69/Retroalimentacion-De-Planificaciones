@@ -22,3 +22,6 @@ table{border-collapse:collapse;width:100%}td{padding:4px 8px;border-bottom:1px s
 .e{color:var(--mu)}
 .w{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 footer{grid-column:1/-1;color:var(--mu);font-size:13px}
+.tg{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:1px 6px;border-radius:4px;background:var(--ok);color:var(--sf);vertical-align:1px}
+.tg.i{background:var(--ob)}
+.fu{font-size:12px;color:var(--mu);margin-top:2px}
